@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="opening-page" aria-label="Wedding invitation envelope">
+      <button class="envelope-button" id="openEnvelope" type="button" aria-label="Tap the Ganesha seal to open the invitation">
+        <img
+          class="envelope-image"
+          src="envelope-full.jpeg"
+          alt="An ornate ivory and gold envelope with a red Ganesha wax seal"
+        />
+        <span class="open-prompt" aria-hidden="true">Tap to open</span>
+      </button>
+    </main>
+
+    <main class="hero-page" id="heroPage" aria-label="Wedding invitation" aria-hidden="true" inert>
+      <section class="hero-artboard" aria-label="Invitation" aria-hidden="true" inert>
+        <img class="hero-canopy" src="canopy-cropped.jpeg" alt="" />
+        <img
+          class="hero-ornament"
+          src="hero-conch-fan.png"
+          alt="A golden conch shell and woven fan surrounded by floral details"
+        />
+        <div class="hero-arch" aria-hidden="true"></div>
+
+        <section class="hero-invitation">
+          <p class="hero-family">Together with their families</p>
+          <h1 tabindex="-1">Nilakshi <span>&amp;</span> Santanu</h1>
+          <p class="hero-request">request the pleasure of your company at their wedding</p>
+        </section>
+
+        <img
+          class="hero-couple"
+          src="WhatsApp Image 2026-11-26 at 07.52.57.jpeg"
+          alt="Illustration of the bride and groom in traditional wedding attire"
+        />
+      </section>
+
+      <button class="music-toggle" id="musicToggle" type="button" aria-label="Play wedding music" aria-pressed="false">
+        ♫ Music off
+      </button>
+      <audio id="weddingAudio" src="wedding-music.mp3" preload="auto" loop hidden></audio>
+
+    <section class="blessing-page" id="blessingPage" aria-label="Family blessings and scratch date" aria-hidden="true" inert>
+      <div class="blessing-artboard">
+        <section class="blessing-card">
+          <div class="blessing-card-inner">
+            <svg class="blessing-ganesha" viewBox="0 0 48 52" aria-hidden="true">
+              <path d="M24 7c-4 0-7 3-7 7 0 3 2 5 5 6-4 1-7 4-7 9 0 4 2 7 6 8-1 3-4 5-7 6 3 2 7 3 11 3s8-1 11-3c-4-1-7-3-8-6 4-1 6-4 6-8 0-5-3-8-7-9 3-1 5-3 5-6 0-4-3-7-7-7z" />
+              <path d="M18 16c-4-1-7 1-8 4-1 3 1 5 4 5m16-9c4-1 7 1 8 4 1 3-1 5-4 5M21 7l3-5 3 5m-8 5h16M24 22v13c0 3-2 5-5 5m10-18c3 2 3 6 1 8" />
+            </svg>
+            <h2 class="blessing-eyebrow" tabindex="-1">With the blessings of our families</h2>
+            <p class="blessing-message">Together with our parents, we invite you to<br class="desktop-break" /> celebrate the beginning of our forever.</p>
+
+            <section class="scratch-panel" aria-label="Scratch to reveal the wedding date">
+              <h3 class="scratch-heading">Scratch to reveal</h3>
+              <div class="scratch-medallion">
+                <div class="scratch-date-reveal" aria-live="polite">
+                  <span>Save the date</span>
+                  <strong>22 Feb, 2027</strong>
+                  <span>Muhurtham<br />at 7:30 PM</span>
+                </div>
+                <canvas
+                  class="scratch-foil"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Scratch to reveal the wedding date"
+                ></canvas>
+              </div>
+              <p class="scratch-instruction">Swipe across the gold medallion to uncover our date</p>
+              <button class="quick-reveal" type="button">Quick reveal</button>
+              <p class="scratch-celebration">✨ Our Forever Begins — Monday, 22 February, 2027!</p>
+            </section>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="countdown-page" id="countdownPage" aria-label="Countdown and wedding timeline" aria-hidden="true" inert>
+      <div class="countdown-artboard">
+        <div class="countdown-card">
+          <svg class="countdown-arch" viewBox="0 0 400 90" aria-hidden="true">
+            <path d="M10 78 Q34 43 75 48 Q97 22 145 27 Q199 -4 253 27 Q301 22 325 48 Q366 43 390 78" />
+            <path d="M25 78 Q48 52 82 56 Q105 33 148 37 Q199 10 250 37 Q293 33 318 56 Q352 52 375 78" />
+            <circle cx="200" cy="27" r="3.5" />
+          </svg>
+          <h2 class="countdown-heading" tabindex="-1">Counting down<br />to forever</h2>
+          <div class="countdown-units" aria-label="Time remaining">
+            <div class="countdown-unit"><strong data-time-unit="days">0</strong><span>Days</span></div>
+            <div class="countdown-unit"><strong data-time-unit="hours">0</strong><span>Hrs</span></div>
+            <div class="countdown-unit"><strong data-time-unit="minutes">0</strong><span>Min</span></div>
+            <div class="countdown-unit"><strong data-time-unit="seconds">0</strong><span>Sec</span></div>
+          </div>
+          <h3 class="timeline-heading">Program Timeline</h3>
+          <svg class="timeline-flourish" viewBox="0 0 140 18" aria-hidden="true">
+            <path d="M1 10 Q28 1 54 8 Q70 14 87 8 Q112 1 139 10" />
+            <circle cx="70" cy="8" r="3" />
+            <ellipse cx="53" cy="8" rx="6" ry="2.5" />
+            <ellipse cx="87" cy="8" rx="6" ry="2.5" />
+          </svg>
+          <ol class="wedding-timeline">
+            <li class="timeline-event">
+              <span class="timeline-clock" aria-hidden="true"></span>
+              <div><time datetime="2027-02-22T11:00:00+05:30">11:00 AM</time><p>Haldi</p></div>
+            </li>
+            <li class="timeline-event">
+              <span class="timeline-clock" aria-hidden="true"></span>
+              <div><time datetime="2027-02-22T19:30:00+05:30">7:30 - 10:00 PM</time><p>Muhurtham Ceremony</p></div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="venue-page" id="venuePage" aria-label="Wedding venue" aria-hidden="true" inert>
+      <div class="venue-artboard">
+        <section class="venue-content">
+          <h2 class="venue-heading" tabindex="-1">The Venue</h2>
+          <img
+            class="venue-temple-art"
+            src="venue-temple.png"
+            alt="Burgundy line illustration of an ornate Indian temple"
+          />
+          <p class="venue-name">Prafulla Banquet</p>
+          <p class="venue-address">Khardaha, North 24 Parganas</p>
+          <a
+            class="venue-map-link"
+            href="https://maps.google.com/maps?cid=1930113704075112967"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>View in Google Maps</span>
+          </a>
+        </section>
+      </div>
+    </section>
+
+    <section class="closing-page" id="closingPage" aria-label="Pre-wedding celebrations and closing message" aria-hidden="true" inert>
+      <div class="closing-artboard">
+        <section class="closing-content">
+          <svg class="closing-ganesha" viewBox="0 0 48 52" aria-hidden="true">
+            <path d="M24 7c-4 0-7 3-7 7 0 3 2 5 5 6-4 1-7 4-7 9 0 4 2 7 6 8-1 3-4 5-7 6 3 2 7 3 11 3s8-1 11-3c-4-1-7-3-8-6 4-1 6-4 6-8 0-5-3-8-7-9 3-1 5-3 5-6 0-4-3-7-7-7z" />
+            <path d="M18 16c-4-1-7 1-8 4-1 3 1 5 4 5m16-9c4-1 7 1 8 4 1 3-1 5-4 5M21 7l3-5 3 5m-8 5h16M24 22v13c0 3-2 5-5 5m10-18c3 2 3 6 1 8" />
+          </svg>
+          <h2 class="closing-heading" tabindex="-1">Pre-Wedding Celebrations</h2>
+          <div class="celebration-event">
+            <h3>Mehendi &amp; Sangeet</h3>
+            <p>21 February, 2027</p>
+            <p class="celebration-location">Venue:
+              <a
+                href="https://maps.google.com/maps/place//data=!4m2!3m1!1s0x39f89bd3be5428eb:0x5b7c17a2dd9d6d6a?entry=s&amp;sa=X&amp;ved=2ahUKEwj13NGxq6WYAxWoWGwGHW81FisQ4kB6BAgYEAA&amp;hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Shamiyanaa Banquet</a>
+            </p>
+          </div>
+          <section class="closing-blessing" aria-label="Blessings">
+            <span aria-hidden="true">🙏</span>
+            <h3>Blessings</h3>
+            <p>Your presence is our greatest gift</p>
+          </section>
+          <p class="closing-thanks">We cannot wait to celebrate with you!</p>
+          <button class="replay-envelope" type="button">Replay Envelope</button>
+          <img
+            class="closing-diya"
+            src="closing-diya.jpeg"
+            alt="Three glowing diyas on a decorative rangoli"
+          />
+        </section>
+      </div>
+    </section>
+    </main>
+    <div class="petal-overlay" id="petalOverlay" aria-hidden="true"></div>
+    <script src="script.js?v=2"></script>
+  </body>
+</html>
